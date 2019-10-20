@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Pet da Tai</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/slider.js"></script>
+<script>
+$(function(){
+	function equalHeight(group) {
+		var tallest = 0;
+		group.each(function() {
+			var thisHeight = $(this).height();
+			if(thisHeight > tallest) {
+				tallest = thisHeight;
+			}
+		});
+		group.height(tallest);
+	}	
+	equalHeight($(".box-1 .inner"));
+})
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="page1">
+<!-- Header -->
+<header>
+  <div class="inicio">
+    <h1 class="logo"><a href="index.html">Pet da Tai</a></h1>
+    <div class="fright">
+      <div class="header-meta">
+        <form action="#" id="search-form" method="post">
+          <input type="text" onBlur="if(this.value==''){this.value='search'}" onFocus="if(this.value=='search'){this.value=''}" value="Procurar" name="Procurar">
+          <a class="search-form-submit"></a>
+        </form>
+        <div class="col-elem"> Traga seu pet<br>
+          Telefone: <span class="phone"> 519845033** </span> </div>
+      </div>
+      <nav>
+        <ul class="sf-menu">
+          <li class="current"><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li> <a href="services.html">Serviços</a>
+            <ul>
+              <li><a href="#anchor">Banho</a></li>
+              <li><a href="#anchor">Tosa</a></li>
+              <li> <a href="#anchor">Banho + Tosa</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">contato</a></li>
+          <li><a href="file:///C:/Users/taian/OneDrive/Área%20de%20Trabalho/teste/public_html/formulario.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="slider-container">
+    <div class="mp-slider">
+      <ul class="items">
+	    <li><img src="images/dog3.jpg" alt=""></li>
+        <li><img src="images/dog.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Content -->
+<section id="content">
+  <div class="container_24">
+    <div class="indent-bot">
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+			<div id="anchor"><h3>Banho</h3></div>
+            <p> Traga seu pet para ele se deliciar com nossos banhos repletos de alegria. Valores:</p>
+			<div>1 banho --> 35,00</div>
+			<div>Plano mensal --> 120,00</div>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Mais informações</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <div id="anchor"><h3>Tosa</h3></div>
+            <p> Nossa tosa é algo delicado, pois entendemos o nervosismo do seu pet, por isso contamos com uma equipe capacitada para melhor atendê-lo. </p>
+			<div>1 tosa --> 20,00</div>
+			<div>Plano mensal --> 20,00</div>
+			</br>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Mais informações</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <div id="anchor"><h3>Banho + Tosa</h3></div>
+            <p class="p0"> <strong class="str-1"> Mais comodidade para seu bolso </strong> </p>
+            <p> Nesta modalidade é possível realizar os dois serviços por o preço de um. </p>
+			<div>1 banho + tosa --> 35,00</div>
+			<div>banho + tosa no plano mensal --> 120,00</div>
+			</br>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Mais informações</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="clear"></div>
+    </div>
+      <div class="clear"></div>
+    </div>
+    <div class="hr-border"></div>
+    <div class="wrapper">
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">A.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Wildlife Rehabilitation</a> </dt>
+              <dd class="extra"> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursus. </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">B.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Grief Management in Children</a> </dt>
+              <dd> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursus. </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">C.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Loving Memories Services</a> </dt>
+              <dd> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">D.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Where To Bury Your Dog</a> </dt>
+              <dd> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursus. Fusce tincidunt, tellus eget. tristique cursus. </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">E.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Diagnostic Laboratory Services</a> </dt>
+              <dd> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">F.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Microchip Implantation</a> </dt>
+              <dd> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursus. Fusce tincidunt, tellus eget tristique. </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="copyright"> &copy; 2019 <strong class="pet">pet da Tai</strong>
+  </div>
+  <ul class="social-list">
+    <li><a href="#"><img src="images/social-link-1.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-2.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-3.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-4.jpg" alt=""></a></li>
+  </ul>
+</footer>
+</body>
+</html>
